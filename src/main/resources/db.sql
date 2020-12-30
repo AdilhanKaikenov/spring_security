@@ -17,8 +17,8 @@ CREATE TABLE authorities
 );
 
 INSERT INTO my_db.users (username, password, enabled)
-VALUES ('adilkhan', '{noop}adilkhan', 1),
-       ('elena', '{noop}elena', 1),
+VALUES ('adilkhan', '{bcrypt}$2a$10$rZz0/qtjoDaBURU3sPA1veK9l/0Ns81Q3KiTRW6oi23pv4sXFkHSO', 1),
+       ('elena', '{bcrypt}$2a$10$p64KYaxN.DRtKNhNrHIKHu.QySfvbm3D/voV52//s.gJENIZFKV3K', 1),
        ('ivan', '{noop}ivan', 1);
 
 INSERT INTO my_db.authorities (username, authority)
