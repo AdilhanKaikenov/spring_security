@@ -26,5 +26,6 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/hr-info").hasAnyRole("HR")
                 .antMatchers("/manager-info/**").hasAnyRole("MANAGER")
                 .and().formLogin().permitAll();
+        http.logout();
     }
 }
